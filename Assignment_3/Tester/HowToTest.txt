@@ -1,0 +1,7 @@
+How to test
+
+1. Put your file as Assignment3_Interface.py in the same directory.
+2. Run the tester.py
+3. Check the database tables that are created and match them against the postgres sql query output using command
+"Select * from ratings, movies where movies.movieid1 = ratings.moviedid;"
+

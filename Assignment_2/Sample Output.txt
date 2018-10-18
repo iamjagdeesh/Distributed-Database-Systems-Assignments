@@ -1,0 +1,9 @@
+/* This is how your output should look. This is just a sample. It does not correspond to provided test_data.dat*/
+RoundRobinRatingsPart0,655,367,3.0
+RoundRobinRatingsPart1,317,326,3.0
+RoundRobinRatingsPart2,254,265,3.0
+RoundRobinRatingsPart2,804,32,3.0
+RangeRatingsPart2,655,367,3.0
+RangeRatingsPart2,317,326,3.0
+RangeRatingsPart2,254,265,3.0
+RangeRatingsPart2,804,32,3.0
