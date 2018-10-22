@@ -33,6 +33,8 @@ def ParallelSort (InputTable, SortingColumnName, OutputTable, openconnection):
 		temp_table_name = TEMP_TABLE_PREFIX + str(i)
 		query_str = "INSERT INTO " + OutputTable +" SELECT * FROM " + temp_table_name + ";"
 		cur.execute(query_str)
+	cur.close()
+	con.commit()
 	#Below 3 lines commented are just for verification	
 	#cur.execute("copy " + OutputTable + " to '/home/user/sort_output.txt';")
 	#cur.execute("SELECT * from " + "(SELECT * FROM " + InputTable + ") as st where st.movieid not in (select movieid from "+ OutputTable +");")
@@ -98,6 +100,8 @@ def ParallelJoin (InputTable1, InputTable2, Table1JoinColumn, Table2JoinColumn, 
 		temp_output_table_name = TEMP_OUTPUT_TABLE_PREFIX + str(i)
 		query_str = "INSERT INTO " + OutputTable +" SELECT * FROM " + temp_output_table_name + ";"	
 		cur.execute(query_str)
+	cur.close()
+	con.commit()
 	#Below 3 lines commented are just for verification	
 	#cur.execute("copy " + OutputTable + " to '/home/user/join_output.txt';")
 	#cur.execute("SELECT * from " + "(SELECT * FROM " + InputTable1 + " INNER JOIN " + InputTable2 + " ON " + InputTable1 + "." + Table1JoinColumn + " = " + InputTable2 + "." + Table2JoinColumn + ") as jt where jt.movieid not in (select movieid from "+ OutputTable +");")
