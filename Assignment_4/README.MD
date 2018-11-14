@@ -1,11 +1,12 @@
-### CSE 512 - Assignment 4 - Map-reduce program that will perform equijoin
+# CSE 512 - Assignment 4 - Map-reduce program that will perform equijoin
+
 ## Command to execute
 
 sudo -u <username> <path_of_hadoop> jar <name_of_jar> <class_with_main_function> HDFSinputFile HDFSoutputFile
 
 Ex: sudo -u hduser /usr/local/hadoop/bin/hadoop jar equijoin.jar Equijoin hdfs://localhost:54310/input/sample.txt hdfs://localhost:54310/output
 
-### Make sure you pass 3 arguments after specifying jar (classname, inputFilePath, outputFilePath)
+## Make sure you pass 3 arguments after specifying jar (classname, inputFilePath, outputFilePath)
 
 In the submission,
 1. Jar name: equijoin.jar
