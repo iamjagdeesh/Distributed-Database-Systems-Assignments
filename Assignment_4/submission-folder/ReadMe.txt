@@ -4,12 +4,12 @@ ASU ID: 1213004713
 
 Command to execute
 sudo -u <username> <path_of_hadoop> jar <name_of_jar> <class_with_main_function> <HDFSinputFile> <HDFSoutputFile>
-Ex: sudo -u hduser /usr/local/hadoop/bin/hadoop jar equijoin.jar Equijoin hdfs://localhost:54310/input/sample.txt hdfs://localhost:54310/output
+Ex: sudo -u hduser /usr/local/hadoop/bin/hadoop jar equijoin.jar equijoin hdfs://localhost:54310/input/sample.txt hdfs://localhost:54310/output
 
 Make sure you pass 3 arguments after specifying jar (classname, inputFilePath, outputFilePath)
 In the submission,
 1. Jar name: equijoin.jar
-2. classname: Equijoin (In java, classname starts with capital letter.)
+2. classname: equijoin
 
 Driver
 In driver (main function), a job is created with the name "equijoin". 

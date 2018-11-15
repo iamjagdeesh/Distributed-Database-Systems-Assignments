@@ -16,13 +16,13 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class Equijoin {
+public class equijoin {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 		//args[0] = classname, args[1] = inputFile, args[2] = outputFile
 		Configuration c = new Configuration();
 		Job job = new Job(c, "equijoin");
-		job.setJarByClass(Equijoin.class);
+		job.setJarByClass(equijoin.class);
 		job.setMapperClass(CustomMapper.class);
 		job.setReducerClass(CustomReducer.class);
 		job.setMapOutputKeyClass(DoubleWritable.class);

@@ -38,7 +38,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.dds.a2.mapreduce.Equijoin</mainClass>
+							<mainClass>com.dds.a2.mapreduce.equijoin</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
